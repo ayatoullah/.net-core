@@ -1,0 +1,30 @@
+﻿@page "{id:int?}"
+@model lab_2.Pages.StudentPage.DetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+<h2>Details</h2>
+<table class="table table-bordered">
+  
+        <tr>
+            <td>Name</td>
+            @*<td>Department</td>*@
+            <td>Address</td>
+            <td>Email</td>
+            <td>Birthday</td>
+        </tr>
+  
+            <tr>
+                <td>@Model.student.St_Name</td>
+
+                <td>@Model.student.Address</td>
+                <td>@Model.student.Email</td>
+                <td>@Model.student.BirthDate</td>
+                <td>
+           </tr>
+        
+ 
+</table>
+                    @section Scripts {
+                        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+                    }

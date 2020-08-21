@@ -1,0 +1,29 @@
+﻿
+@model lab3.Models.Category
+
+@{
+    ViewData["Title"] = "add";
+}
+<h2>add</h2>
+<form method="post" action="Create">
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="@Model.name"></label>
+                <input asp-for="@Model.name" class="form-control" />
+                <span asp-validation-for="@Model.name" class="text-danger"></span>
+            </div>
+           
+
+
+            <input type="submit" class="btn btn-default" />
+
+
+
+
+
+
+        </div>
+    </div>
+</form>

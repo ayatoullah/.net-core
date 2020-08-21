@@ -1,0 +1,11 @@
+c:\users\aya-sama\source\repos\lab3\lab3\obj\Debug\netcoreapp2.0\lab3.csproj.CoreCompileInputs.cache
+c:\users\aya-sama\source\repos\lab3\lab3\obj\Debug\netcoreapp2.0\lab3.AssemblyInfoInputs.cache
+c:\users\aya-sama\source\repos\lab3\lab3\obj\Debug\netcoreapp2.0\lab3.AssemblyInfo.cs
+c:\users\aya-sama\source\repos\lab3\lab3\bin\Debug\netcoreapp2.0\lab3.deps.json
+c:\users\aya-sama\source\repos\lab3\lab3\bin\Debug\netcoreapp2.0\lab3.runtimeconfig.json
+c:\users\aya-sama\source\repos\lab3\lab3\bin\Debug\netcoreapp2.0\lab3.runtimeconfig.dev.json
+c:\users\aya-sama\source\repos\lab3\lab3\bin\Debug\netcoreapp2.0\lab3.dll
+c:\users\aya-sama\source\repos\lab3\lab3\bin\Debug\netcoreapp2.0\lab3.pdb
+c:\users\aya-sama\source\repos\lab3\lab3\obj\Debug\netcoreapp2.0\lab3.dll
+c:\users\aya-sama\source\repos\lab3\lab3\obj\Debug\netcoreapp2.0\lab3.pdb
+C:\Users\aya-sama\source\repos\lab3\lab3\obj\Debug\netcoreapp2.0\lab3.csprojResolveAssemblyReference.cache

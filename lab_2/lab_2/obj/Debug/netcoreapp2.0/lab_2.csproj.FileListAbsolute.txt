@@ -1,0 +1,11 @@
+E:\.net core labs\lab_2\lab_2\obj\Debug\netcoreapp2.0\lab_2.csprojResolveAssemblyReference.cache
+E:\.net core labs\lab_2\lab_2\obj\Debug\netcoreapp2.0\lab_2.csproj.CoreCompileInputs.cache
+E:\.net core labs\lab_2\lab_2\obj\Debug\netcoreapp2.0\lab_2.AssemblyInfoInputs.cache
+E:\.net core labs\lab_2\lab_2\obj\Debug\netcoreapp2.0\lab_2.AssemblyInfo.cs
+E:\.net core labs\lab_2\lab_2\bin\Debug\netcoreapp2.0\lab_2.deps.json
+E:\.net core labs\lab_2\lab_2\bin\Debug\netcoreapp2.0\lab_2.runtimeconfig.json
+E:\.net core labs\lab_2\lab_2\bin\Debug\netcoreapp2.0\lab_2.runtimeconfig.dev.json
+E:\.net core labs\lab_2\lab_2\bin\Debug\netcoreapp2.0\lab_2.dll
+E:\.net core labs\lab_2\lab_2\bin\Debug\netcoreapp2.0\lab_2.pdb
+E:\.net core labs\lab_2\lab_2\obj\Debug\netcoreapp2.0\lab_2.dll
+E:\.net core labs\lab_2\lab_2\obj\Debug\netcoreapp2.0\lab_2.pdb

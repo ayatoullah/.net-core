@@ -1,0 +1,83 @@
+﻿@page
+@model lab_2.Pages.StudentPage.studentDataModel
+@{
+    ViewData["Title"] = "studentData";
+}
+
+
+<h2>Student</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="@Model.student.St_Id" />
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label asp-for="@Model.student.St_Name"></label>
+                <input asp-for="@Model.student.St_Name" class="form-control" />
+                <span asp-validation-for="@Model.student.St_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.student.St_Age"></label>
+                <input asp-for="@Model.student.St_Age" class="form-control" />
+                <span asp-validation-for="@Model.student.St_Age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.student.Email"></label>
+                <input asp-for="@Model.student.Email" class="form-control" />
+                <span asp-validation-for="@Model.student.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.student.BirthDate"></label>
+                <input asp-for="@Model.student.BirthDate" class="form-control" />
+                <span asp-validation-for="@Model.student.BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.student.departmentID"></label>
+                <select asp-for="@Model.student.departmentID" class="form-control" asp-items="@ViewBag.ls" ></select>
+               @*<select asp-for="@Model.student.department.Dept_Name" class="form-control" asp-items="@Model.ls" />*@
+                <span asp-validation-for="@Model.student.departmentID" class="text-danger"></span>
+            </div>
+            @if(Model.student==null)
+            {
+                <input type="submit" class="btn btn-default" />
+            }
+            else
+            {
+                <input type="submit" value="save"asp-page-handler="Edit" class="btn btn-default" />
+            }
+        </div>
+    </div>
+</form>
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Department</td>
+            <td>Address</td>
+            <td>Email</td>
+            <td>Birthday</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.students)
+        {
+            <tr>
+                <td>@item.St_Name</td>
+                <td>@item.department.Dept_Name</td> 
+                <td>@item.Address</td>
+                <td>@item.Email</td>
+                <td>@item.BirthDate</td>
+                <td>
+                    <a asp-route-id="@item.St_Id" asp-page-handler="Edit">Edit</a>|
+                    <a asp-route-id="@item.St_Id" onclick="return confirm('Are u sure?')" asp-page-handler="Delete">Delete</a>
+                    <a asp-page="./details" asp-route-id="@item.St_Id">Details</a>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
